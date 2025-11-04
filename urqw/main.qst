@@ -1,0 +1,105 @@
+/*
+The file encoding is UTF-8 (without BOM)
+*/
+
+:start
+urqw_game_lang = "en"
+pln one .... three...
+pln - one - two-three
+pln ---one--two-- three
+pln 1-2 123-45-67
+pln -5 + 2 = -3
+pln su­per­ca­lif­ra­gil­is­tic­ex­pi­ali­do­cious
+text = "(C) (P) (R) (TM)"
+urqw_typography_off = 1
+pln Text without transformations: #text$
+urqw_typography_off = 0
+pln #text$
+text = '"one "two" three".'
+javascript = "typography('" + text + "', 'en');"
+pln English text: <span lang="en">#javascript$</span>
+text = '"один "два" три".'
+javascript = "typography('" + text + "', 'ru');"
+pln Russian text: <span lang="ru">#javascript$</span>
+btn be, Belarusian (be)
+btn en, English (en)
+btn en-uk, English (United Kingdom / Great Britain) (en-UK / en-GB)
+btn en-us, English (United States) (en-US)
+btn fr, French (fr)
+btn de, German (de)
+btn it, Italian (it)
+btn ru, Russian (ru)
+btn es, Spanish (es)
+btn uk, Ukrainian (uk)
+end
+
+:be
+urqw_game_lang = "be"
+pln ЁЙ-Ў, ёй-ў
+pln "адзін "два" тры".
+pln камп'ютар
+btn start, "Назад..."
+end
+
+:en
+urqw_game_lang = "en"
+pln "one "two" three".
+pln UrqW's plugin
+btn start, "Back..."
+end
+
+:en-uk
+urqw_game_lang = "en-UK"
+pln "one "two" three".
+pln UrqW's plugin
+btn start, "Back..."
+end
+
+:en-us
+urqw_game_lang = "en-US"
+pln "one "two" three".
+pln UrqW's plugin
+btn start, "Back..."
+end
+
+:fr
+urqw_game_lang = "fr"
+pln L'UrqW permet de créer des jeux textuels.
+pln "un "deux" trois".
+btn start, "Retour..."
+end
+
+:de
+urqw_game_lang = "de"
+pln "eins "zwei" drei".
+pln Felix' Schwester
+btn start, "Zurück..."
+end
+
+:it
+urqw_game_lang = "it"
+pln L'amico ha un'idea.
+pln "uno "due" tre".
+btn start, "Indietro..."
+end
+
+:ru
+urqw_game_lang = "ru"
+pln Ёлок строй. Йода ёмкость.
+pln "один "два" три".
+btn start, "Назад..."
+end
+
+:es
+urqw_game_lang = "es"
+pln "uno "dos" tres".
+btn start, "Atrás..."
+end
+
+:uk
+urqw_game_lang = "uk"
+pln Йдучий герой
+pln "один "два" три".
+pln комп'ютер
+btn start, "Назад..."
+end
