@@ -1,6 +1,6 @@
 # Typography
 
-*Version from 2025-11-04 for UrqW 1.1.*
+*Version from 2026-11-05 for UrqW 2.0.*
 
 A plugin for [UrqW](https://github.com/urqw/UrqW) that automatically improves typography.
 
@@ -12,8 +12,8 @@ Usage Features:
 
 * Connect the plugin to the game. It will start working automatically. In most simple cases, the default configuration will be sufficient.
 * You can explicitly set the language of the typographic tradition using the `urqw_typography_lang` variable. If it is not set or has an empty value, the plugin will use the language from the `urqw_game_lang` variable.
-* If you need to enable or disable automatic typographic transformations, you can do so using the `urqw_typography_off` variable: a positive numeric value disables automatic text transformations.
-* If you need to process specific text, the `typography()` JavaScript function can be called via the `javascript` system variable. It takes the text (required) as its first parameter, and the language code (optional) as its second.
+* If you need to enable or disable automatic typographic transformations, you can do so using the `urqw_typography_off` variable: value that is equivalent to `true` in a Boolean context disables automatic text transformations.
+* If you need to process specific text, the `Typography()` URQL function can be called. It takes the text (required) as its first parameter, and the language code (optional) as its second.
 
 For more details, see the plugin usage example.
 

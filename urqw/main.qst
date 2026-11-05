@@ -11,16 +11,16 @@ pln 1-2 123-45-67
 pln -5 + 2 = -3
 pln su­per­ca­lif­ra­gil­is­tic­ex­pi­ali­do­cious
 text = "(C) (P) (R) (TM)"
-urqw_typography_off = 1
+urqw_typography_off = true
 pln Text without transformations: #text$
-urqw_typography_off = 0
+urqw_typography_off = false
 pln #text$
 text = '"one "two" three".'
-javascript = "typography('" + text + "', 'en');"
-pln English text: <span lang="en">#javascript$</span>
+text_en = Typography(text, "en")
+pln English text: <span lang="en">#text_en$</span>
 text = '"один "два" три".'
-javascript = "typography('" + text + "', 'ru');"
-pln Russian text: <span lang="ru">#javascript$</span>
+text_ru = Typography(text, "ru")
+pln Russian text: <span lang="ru">#text_ru$</span>
 btn be, Belarusian (be)
 btn en, English (en)
 btn en-uk, English (United Kingdom / Great Britain) (en-UK / en-GB)
