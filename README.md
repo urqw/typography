@@ -17,7 +17,7 @@ Usage Features:
 
 For more details, see the plugin usage example.
 
-The plugin and an example of its use can be found in the urqw directory. A demo of the plugin can be viewed at <https://urqw.github.io/UrqW#typography>
+The plugin and an example of its use can be found in the urqw directory. A demo of the plugin can be viewed at <https://urqw.github.io/typography>
 
 For other UrqW plugins, see the [common repository](https://github.com/urqw/plugins).
 
