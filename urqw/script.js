@@ -106,6 +106,14 @@ functions.typography = function(text, lang = '') {
 			case 'fr':
 				// Replace typewriter apostrophe with right apostrophe
 				part = part.replace(/'/g, '\u2019');
+				// Replace a regular space or no-break space before certain characters with a narrow no-break space
+				part = part.replace(/[ \u00A0](?=[;!?%])/g, '\u202F');
+				// Replace a regular space or narrow no-break space before colon with a no-break space
+				part = part.replace(/[ \u202F](?=[:])/g, '\u00A0');
+				// Replace a regular space or no-break space after an opening quotation mark with a narrow no-break space
+				part = part.replace(/([\u00AB\u201C])[ \u00A0]/g, '$1\u202F');
+				// Replace a regular space or no-break space before a closing quotation mark with a narrow no-break space
+				part = part.replace(/[ \u00A0](?=[\u00BB\u201D])/g, '\u202F');
 				// Replace  typewriter quotation mark with « outside » and “ inside ” quotes
 				part = replaceQuotes(part, '\u00AB\u202F', '\u202F\u00BB', '\u201C\u202F', '\u202F\u201D');
 				break;

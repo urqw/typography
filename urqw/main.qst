@@ -65,6 +65,9 @@ end
 :fr
 urqw_game_lang = "fr"
 pln L'UrqW permet de créer des jeux textuels.
+pln Un ; deux ! Trois ? 100 % : quatre.
+pln Un ; deux ! Trois ? 100 % : quatre.
+pln « un “ deux ” trois ».
 pln "un "deux" trois".
 btn start, "Retour..."
 end
