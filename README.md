@@ -1,6 +1,6 @@
 # Typography
 
-*Version from 2026-11-05 for UrqW 2.0.*
+*Version from 2026-11-27 for UrqW 2.0.*
 
 A plugin for [UrqW](https://github.com/urqw/UrqW) that automatically improves typography.
 
