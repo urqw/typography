@@ -2,6 +2,7 @@
 
 ## Version from 2026-11-27
 
+* Improvements for the German language: Replace a regular space or no-break space before percent sign with a narrow no-break space.
 * Improvements for the French language:
 	+ Replace a regular space or no-break space before a semicolon, exclamation mark, question mark, and percent sign with a narrow no-break space.
 	+ Replace a regular space or narrow no-break space before colon with a no-break space.

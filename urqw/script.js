@@ -75,6 +75,8 @@ functions.typography = function(text, lang = '') {
 			case 'de':
 				// Replace typewriter apostrophe with right apostrophe
 				part = part.replace(/'/g, '\u2019');
+				// Replace a regular space or no-break space before percent sign with a narrow no-break space
+				part = part.replace(/[ \u00A0](?=[%])/g, '\u202F');
 				// Replace  typewriter quotation mark with »outside« and ›inside‹ quotes
 				part = replaceQuotes(part, '\u00BB', '\u00AB', '\u203A', '\u2039');
 				// Replace  typewriter quotation mark with „outside“ and ‚inside‘ quotes

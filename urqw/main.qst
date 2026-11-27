@@ -74,6 +74,7 @@ end
 
 :de
 urqw_game_lang = "de"
+pln 25 % und 50 %
 pln "eins "zwei" drei".
 pln Felix' Schwester
 btn start, "Zurück..."
