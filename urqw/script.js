@@ -101,6 +101,8 @@ functions.typography = function(text, lang = '') {
 				break;
 			// Spanish
 			case 'es':
+				// Replace a regular space or no-break space before percent sign with a narrow no-break space
+				part = part.replace(/[ \u00A0](?=[%])/g, '\u202F');
 				// Replace  typewriter quotation mark with «outside» and “inside” quotes
 				part = replaceQuotes(part, '\u00AB', '\u00BB', '\u201C', '\u201D');
 				break;

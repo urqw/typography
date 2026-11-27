@@ -96,6 +96,7 @@ end
 
 :es
 urqw_game_lang = "es"
+pln 25 % y 50 %
 pln "uno "dos" tres".
 btn start, "Atrás..."
 end
